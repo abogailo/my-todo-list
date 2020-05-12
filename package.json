@@ -1,0 +1,19 @@
+{
+  "name": "my-todo-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abogailo/my-todo-list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abogailo/my-todo-list/issues"
+  },
+  "homepage": "https://github.com/abogailo/my-todo-list#readme"
+}
