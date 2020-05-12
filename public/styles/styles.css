@@ -1,0 +1,149 @@
+  
+  
+   @font-face {
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Inria Serif Regular'), local('InriaSerif-Regular'), url(https://fonts.gstatic.com/s/inriaserif/v1/fC1lPYxPY3rXxEndZJAzN3Srdy3vrFCl.woff2) format('woff2');
+   }
+
+   body {
+    margin: 10;
+    padding: 10;
+    color: #3cba54;
+    opacity: 100%;
+    font-size: 13px;
+    font-style: normal;
+    font-family: 'Lora', serif;
+    font-weight: 40;
+  }
+
+  p {
+    margin: 0px 1px 0px 0px; 
+
+  }
+  div {
+    margin: 20px 8px 10px 10px; 
+  }
+
+   #new-todo-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .card-wrapper {
+      margin: auto;
+      width: 50%;
+    }
+
+    .create-container {
+      margin: auto;
+      width: 50%;
+      border: 1px solid #4C8BF5;
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    .card {
+      width: 200px;
+      height: 250px;
+        overflow:hidden;
+        box-shadow: 7px 7px 5px 0px rgba(194,190,194,1);
+        border-radius: 10px;
+        
+    }
+
+   .expected_date {
+      color: #de5246;
+    }
+    .date-completed {
+      color:#4C8BF5;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .description {
+      color: #4C8BF5
+    }
+    .card:hover,
+    .card.active {
+        box-shadow: 0px 0px 0px 2px #4C8BF5;
+        
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .call {
+        display: none;
+    }
+
+    .todo_card{
+        padding-top: 10px;
+        height: 90px;
+        width: 130px;
+    }
+
+    .card-remove {
+      display: flex;
+      justify-content: center;
+      text-shadow: .75px .75px .75px rgb(128, 120, 120);
+      color: #de5246;
+      cursor: pointer;
+      }
+
+      .card-paragraph{
+        font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+      }
+
+      .card-update {
+        display: flex;
+        justify-content: center;
+        text-shadow: .75px .75px .75px rgb(128, 120, 120);
+        color: #4C8BF5;
+        cursor: pointer;
+        }
+
+    .card_view {
+        border: 5px solid grey;
+        box-shadow: 7px 7px 5px 0px rgba(194,190,194,1);
+    }
+
+    .title-todos {
+      margin: auto;
+      width: 50%;
+    }
+
+    label {
+      flex-direction: row;
+      text-align: right;
+      width: 400px;
+      line-height: 26px;
+      margin-bottom: 10px;
+    }
+
+    input {
+      height: 20px;
+      flex: 0 0 200px;
+      margin-left: 10px;
+    }
+
+    input {
+        border-radius: 13px;
+        border: .5px solid rgb(201, 199, 202);
+        padding: 3px; 
+        width: 160px;
+        height: 15px;    
+    }
+
+
+   
+
+   
+
+
+    

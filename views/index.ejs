@@ -1,0 +1,41 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <title>ToDo List</title>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="create-container"
+        <h1>Create a New To Do!</h1>
+          <form action="/todos" method="POST">
+            <label><input type="text" placeholder="Name" name="name" /></label>
+            <label> <input type="text" placeholder="Description" name="description" /></label>
+            <label> <input type="date" placeholder="Expected Completion date" name="expected_date"/></label>
+            <input type=hidden id="completed" name="completed" value="false"/>
+            <input type=hidden id="completed_date" name="completed_date" value=""/>
+            <label><button type="submit">Submit</button></label>
+          </form>
+    </div>
+
+    <div class="title-todos">
+      <h2 id="title"> ToDos </h2>
+    </div>
+    
+    <div class="card-wrapper" id="card-wrapper">
+      <div id="new-todo-container"> </div>
+      <div id="description-view"></div>
+</div>
+    <script src="adapters/ToDosAdapter.js"></script>
+    <script src="components/app.js"></script>
+    <script src="components/todos.js"></script>
+    <script src="components/todo.js"></script>
+    <script src="client.js"></script>
+  </body>
+  
+</html>
