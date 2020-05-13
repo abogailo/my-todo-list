@@ -1,8 +1,8 @@
 class ToDosAdapter {
     constructor(){
         this.baseUrl =
-        'https://todo-list-abagailh.herokuapp.com/todos'
-        //'http://localhost:8080/todos'
+        //'https://todo-list-abagailh.herokuapp.com/todos'
+        'http://localhost:8080/todos'
     }
 
      async getTodos() {

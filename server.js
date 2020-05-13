@@ -86,13 +86,20 @@ app.delete("/todos/:id", (req, res) => {
     });
 
 app.patch('/todos/:id', (req, res) =>{// {last_name : "smith", age: 44}
+    
     let id = req.params.id;
-    let date = new Date()
-    let day = date.getDay();
-    let month = date.getMonth();
-    let year = date.getFullYear();
-    let dateStr = day + "-" + month + "-" + year;
+    let today = new Date()
+    let dd = today.getDate();
+    let mm = today.getMonth()+1; //As January is 0.
+    let yyyy = today.getFullYear();
+    
+    
+    let dateStr = mm + "-" + dd + "-" + yyyy;
     toDoCollection.updateOne({_id  : new mongo.ObjectId(id)}, {
         $set: { completed: true, completed_date: dateStr}
     });
+
+    
 });
+
+
