@@ -1,9 +1,8 @@
-require('dotenv').config()
+
 //importing modules
 
 const mongo             = require('mongodb')
-const connectionString  = 'mongodb+srv://abogailo:Tripp19$@todocluster-p1jej.mongodb.net/test?retryWrites=true&w=majority'
-//const connectionString  = 'mongodb+srv://abogailo:9YOokxlwF2qWq3Pa@cluster0-9ufys.mongodb.net/test?retryWrites=true&w=majority'
+const connectionString  = 'mongodb+srv://abogailo:9YOokxlwF2qWq3Pa@cluster0-vlfaj.mongodb.net/test?retryWrites=true&w=majority'
 
 const express           = require('express');
 const bodyParser        = require('body-parser')

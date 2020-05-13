@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,9 @@
     "express": "^4.17.1",
     "kill-port": "^1.6.0",
     "mongodb": "^3.5.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   },
   "bugs": {
     "url": "https://github.com/abogailo/my-todo-list/issues"
